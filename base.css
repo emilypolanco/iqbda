@@ -4,13 +4,16 @@ body {
   margin: 0;
   padding: 0;
 }
-#page-wrapper{
-width:960px;
-background-color: white;
-margin: 0 auto; /* TB LR*/
+#page-wrapper {
+  width:960px;
+  background-color: white;
+  margin: 0 auto; /* TB LR */
+  height: 100%;
+  min-height: 100vh;
 }
 #page-header,#content, #navbar {padding: 0 1em;}
-#page-header{ padding-top: 1em;}
+#page-header{ padding-top: 1em;
+position: relative;}
 
 #page-header img{ vertical-align: middle;}
 
@@ -32,3 +35,28 @@ display: inline-block;}
 text-shadow: 2px 2px #333;}
 #navbar ul {padding: 0;}
 #navbar ul li {display: inline-block;}
+#user-links {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+#user-links a{  color: darkgreen;
+  text-decoration: none;}
+#user-links a:hover {
+  text-decoration: underline;
+}
+th, td { padding; 6px;}
+tr:nth-child(odd){background-color: #eee;}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+input[type=radio] + label, input[type=checkbox] + label {
+    font-weight: normal;
+    display:inline;
+  }
+  input[type=submit] {
+  display:block;
+  margin: 15px 0;
+}
